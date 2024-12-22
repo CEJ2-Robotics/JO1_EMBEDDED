@@ -1,2 +1,0 @@
-../Core/Src/gyro_orientation.c:9:6:gyro_orient_init	16	static
-../Core/Src/gyro_orientation.c:18:7:gyro_orient_update	32	static
