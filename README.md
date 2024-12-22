@@ -2,6 +2,10 @@
 
 Main project in collaboration with *John Deere* for the undergrad course "**Design of Advanced Embedded Systems**", which delves mainly into *Design and Analysis of Algorithms*, *Digital Signal Processing*, *Shared-Memory Architecture*, and *Communication Interfaces*.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ba551d48-1bdb-434d-bece-047efd1e78cd" alt = "NUCLEO-H745ZI-Q" width="240" height="240"/>
+</p>
+
 ## System Architecture
 
 The system employs a *NUCLEO-H745ZI-Q* development board to control a tricycle-style vehicle platform with synchronized front steering and differential rear drive. Motion control is achieved through dual PWM channels: TIM13 handles servo-based steering with angle-to-pulse width mapping, while TIM14 manages ESC motor control with bidirectional speed control through pulse width modulation.
@@ -21,7 +25,7 @@ The system employs a *MATLAB-generated pure pursuit controller* operating at LIN
 
 ### External Navigation Mode
 
-Position data comes from the *John Deere Global Positioning System*, which tracks a vehicle-mounted marker. Coordinates are transmitted through an *NRF24* wireless link between a secondary board (NUCLEO-F103RB) and the vehicle. To accommodate the relatively slow GPS update rate, the system implements a time-based proportional control strategy:
+Position data comes from the *John Deere Global Positioning System*, which tracks a vehicle-mounted marker. Coordinates are transmitted through an *NRF24* wireless link between a secondary board (*NUCLEO-F103RB*) and the vehicle. To accommodate the relatively slow GPS update rate, the system implements a time-based proportional control strategy:
 
 The vehicle advances at a fixed SPEED while the controller calculates movement durations proportional to the distance from target. Between movements, the system pauses for STOP_TIME milliseconds to ensure stable position readings. Waypoint arrival triggers an audio alert through a PWM-driven buzzer using TIM1.
 
