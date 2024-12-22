@@ -58,7 +58,7 @@ Both modes utilize *USART3* for debugging and system monitoring, providing real-
 | MPU6050 IMU                                  | 1             |
 | GM 25-370 12V DC Motor with Encoder          | 1             |
 | MCP2515 CAN Controller with SPI Interface    | 1             |
-| TJA1051 CAN Transceiver                      | 1             |
+| CJMCU-1051 TJA1051 CAN Transceiver           | 1             |
 | Tower Pro MG996R Servo Motor                 | 1             |
 | 30A ESC (Electronic Speed Controller)        | 1             |
 | HW-508 Passive Buzzer Module                 | 1             |
