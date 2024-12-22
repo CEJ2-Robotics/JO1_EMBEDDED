@@ -1,0 +1,11 @@
+../Core/Src/controller/robocar_c.c:96:15:rtGetNaN	1
+../Core/Src/controller/robocar_c.c:102:17:rtGetNaNF	1
+../Core/Src/controller/robocar_c.c:108:18:rtIsInf	3
+../Core/Src/controller/robocar_c.c:114:18:rtIsInfF	3
+../Core/Src/controller/robocar_c.c:120:18:rtIsNaN	2
+../Core/Src/controller/robocar_c.c:126:18:rtIsNaNF	2
+../Core/Src/controller/robocar_c.c:131:15:norm	3
+../Core/Src/controller/robocar_c.c:163:15:closestPointOnLine	8
+../Core/Src/controller/robocar_c.c:223:8:rt_atan2d_snf	10
+../Core/Src/controller/robocar_c.c:260:6:robocar_c_step	46
+../Core/Src/controller/robocar_c.c:536:6:robocar_c_initialize	2

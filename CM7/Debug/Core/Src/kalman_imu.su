@@ -1,0 +1,2 @@
+../Core/Src/kalman_imu.c:10:6:imu_kalman_init	24	static
+../Core/Src/kalman_imu.c:19:7:imu_kalman_update	16	static

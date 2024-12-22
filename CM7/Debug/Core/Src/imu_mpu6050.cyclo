@@ -1,0 +1,8 @@
+../Core/Src/imu_mpu6050.c:27:6:imu_setup_routine	1
+../Core/Src/imu_mpu6050.c:46:6:imu_init	5
+../Core/Src/imu_mpu6050.c:104:6:imu_calibrate_gyro	2
+../Core/Src/imu_mpu6050.c:124:6:imu_calibrate_accel	2
+../Core/Src/imu_mpu6050.c:144:6:imu_read_raw_data	1
+../Core/Src/imu_mpu6050.c:164:12:imu_read_processed_data	1
+../Core/Src/imu_mpu6050.c:197:19:imu_write_gyro_full_scale_range	5
+../Core/Src/imu_mpu6050.c:237:19:imu_write_accel_full_scale_range	5

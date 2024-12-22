@@ -1,0 +1,3 @@
+../Core/Src/buzzer_sound.c:55:6:stop_playing_tone	4	static
+../Core/Src/buzzer_sound.c:60:5:calculate_prescaler_for_frequency	16	static
+../Core/Src/buzzer_sound.c:66:6:play_melody	40	static
