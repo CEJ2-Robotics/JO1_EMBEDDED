@@ -10,6 +10,10 @@ Main project in collaboration with *John Deere* for the undergrad course "**Desi
 
 The system employs a *NUCLEO-H745ZI-Q* development board to control a tricycle-style vehicle platform with synchronized front steering and differential rear drive. Motion control is achieved through dual PWM channels: *TIM13* handles servo-based steering with angle-to-pulse width mapping, while *TIM14* manages ESC motor control with bidirectional speed control through pulse width modulation. Both modes utilize *UART3* for debugging and system monitoring, providing real-time state information at 115200 baud. 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d0c4bedb-3c1d-49ac-880f-9bfe21f4aac4"/>
+</p>
+
 ### Internal Navigation Mode
 
 The internal navigation system fuses data from two sensor streams: a wheel-mounted *encoder* for distance measurement and an *MPU6050 IMU* (via the *I2C4* peripheral) for orientation tracking. The encoder data is preprocessed by an Arduino Nano and transmitted via *FDCAN* to the main MCU, where raw counts are converted to distance using a counts-per-revolution calibration. 
