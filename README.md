@@ -35,22 +35,22 @@ The vehicle advances at a fixed **SPEED** while the controller calculates moveme
 
 Both modes utilize *UART3* for debugging and system monitoring, providing real-time state information at 115200 baud. 
 
-### Vehicle Component Overview & Schematic Diagram
+## Vehicle Component Overview & Schematic Diagram
 
-| Item                                               | Quantity      |
-| ---------------------------------------------------| ------------- |
-| Servo Steering Robot Kit                           | 1             |
-| NUCLEO-H745ZI-Q                                    | 1             |
-| Arduino Nano                                       | 1             |
-| nRF24L01 2.4GHz Wireless Module                    | 1             |
-| MPU6050 IMU                                        | 1             |
-| GM 25-370 12V DC Motor with Encoder                | 1             |
-| MCP2515 CAN Controller with SPI Interface          | 1             |
-| TJA1051 CAN Transceiver                            | 1             |
-| Tower Pro MG996R Servo Motor                       | 1             |
-| 30A ESC (Electronic Speed Controller)              | 1             |
-| HW-508 Passive Buzzer Module                       | 1             |
-| 330 Ohm Resistor                                   | 1             |
-| Li-Po Battery 3.7V 2000mAh                         | 2             |
-| Li-Po 2S Battery 7.4V 1500mAh                      | 1             |
-| LM2596 Step Down Regulator 25W 3A                  | 2             |
+| Item                                         | Quantity      |
+| ---------------------------------------------| ------------- |
+| Servo Steering Robot Kit                     | 1             |
+| NUCLEO-H745ZI-Q                              | 1             |
+| Arduino Nano                                 | 1             |
+| nRF24L01 2.4GHz Wireless Module              | 1             |
+| MPU6050 IMU                                  | 1             |
+| GM 25-370 12V DC Motor with Encoder          | 1             |
+| MCP2515 CAN Controller with SPI Interface    | 1             |
+| TJA1051 CAN Transceiver                      | 1             |
+| Tower Pro MG996R Servo Motor                 | 1             |
+| 30A ESC (Electronic Speed Controller)        | 1             |
+| HW-508 Passive Buzzer Module                 | 1             |
+| 330 Ohm Resistor                             | 1             |
+| Li-Po Battery 3.7V 2000mAh                   | 2             |
+| Li-Po 2S Battery 7.4V 1500mAh                | 1             |
+| LM2596 Step Down Regulator 25W 3A            | 2             |
