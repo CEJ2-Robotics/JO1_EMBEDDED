@@ -39,6 +39,10 @@ The vehicle advances at a fixed **SPEED** while the controller calculates moveme
 
 Both modes utilize *USART3* for debugging and system monitoring, providing real-time state information at 115200 baud. 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/52570b92-e074-4024-b223-eaa62c346fd2" alt = "External Navigation Mode Test"/>
+</p>
+
 ## Vehicle Component Overview & Schematic Diagram
 
 | Item                                         | Quantity      |
