@@ -1,6 +1,6 @@
 # John Deere Tractor Navigation System
 
-<p align="justify">Main project in collaboration with *John Deere* for the undergrad course "**Design of Advanced Embedded Systems**", which delves mainly into *Design and Analysis of Algorithms*, *Digital Signal Processing*, *Shared-Memory Architecture*, and *Communication Interfaces*.
+<p align="justify">Main project in collaboration with *John Deere* for the undergrad course "**Design of Advanced Embedded Systems**", which delves mainly into *Design and Analysis of Algorithms*, *Digital Signal Processing*, *Shared-Memory Architecture*, and *Communication Interfaces*.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ba551d48-1bdb-434d-bece-047efd1e78cd" alt = "NUCLEO-H745ZI-Q" width="200" height="200"/>
@@ -53,7 +53,7 @@ Both modes utilize *USART3* for debugging and system monitoring, providing real-
 
 ## Vehicle Schematic Diagram & Component Overview
 
-For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics</p>
+For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/768281bf-2760-4cc2-8c32-98f283492d16" alt = "Schematic Diagram"/>
