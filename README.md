@@ -1,6 +1,6 @@
 # John Deere Tractor Navigation System
 
-<p align="justify">Main project in collaboration with <b>John Deere</b> for the undergrad course "**Design of Advanced Embedded Systems**", which delves mainly into *Design and Analysis of Algorithms*, *Digital Signal Processing*, *Shared-Memory Architecture*, and *Communication Interfaces*.</p>
+<p align="justify">Main project in collaboration with <b>John Deere</b> for the undergrad course "<b>Design of Advanced Embedded Systems</b>", which delves mainly into <i>Design and Analysis of Algorithms</i>, <i>Digital Signal Processing</i>, <i>Shared-Memory Architecture</i>, and <i>Communication Interfaces</i>.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ba551d48-1bdb-434d-bece-047efd1e78cd" alt = "NUCLEO-H745ZI-Q" width="200" height="200"/>
@@ -8,7 +8,7 @@
 
 ## Prototype Description
 
-Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for autonomous systems that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a tractor prototype that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations.
+<p align="justify">Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for autonomous systems that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a tractor prototype that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1b476210-97d0-48a6-9460-5cdd5ff1afbb" alt = "Prototype"/>
@@ -16,7 +16,7 @@ Farmers face several challenges, including labor shortages, the need for precisi
 
 ## System Architecture
 
-The system employs a *NUCLEO-H745ZI-Q* development board to control the tricycle-style vehicle platform with synchronized front steering and differential rear drive. Motion control is achieved through dual PWM channels: *TIM13* handles servo-based steering with angle-to-pulse width mapping, while *TIM14* manages ESC motor control with bidirectional speed control through pulse width modulation. 
+<p align="justify">The system employs a <i>NUCLEO-H745ZI-Q</i> development board to control the tricycle-style vehicle platform with synchronized front steering and differential rear drive. Motion control is achieved through dual PWM channels: <i>TIM13</i> handles servo-based steering with angle-to-pulse width mapping, while <i>TIM14</i> manages ESC motor control with bidirectional speed control through pulse width modulation.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d0c4bedb-3c1d-49ac-880f-9bfe21f4aac4" alt = "Vehicle"/>
@@ -24,16 +24,18 @@ The system employs a *NUCLEO-H745ZI-Q* development board to control the tricycle
 
 ### Internal Navigation Mode
 
-The internal navigation system fuses data from two sensor streams: a wheel-mounted *encoder* for distance measurement and an *MPU6050 IMU* (via the *I2C4* peripheral) for orientation tracking. The encoder data is preprocessed by an Arduino Nano and transmitted via *CAN* to the main MCU (received by means of the *FDCAN1* peripheral) , where raw counts are converted to distance using a counts-per-revolution calibration. 
+<p align="justify">The internal navigation system fuses data from two sensor streams: a wheel-mounted <i>encoder</i> for distance measurement and an <i>MPU6050 IMU</i> (via the <i>I2C4</i> peripheral) for orientation tracking. The encoder data is preprocessed by an Arduino Nano and transmitted via <i>CAN</i> to the main MCU (received by means of the <i>FDCAN1</i> peripheral), where raw counts are converted to distance using a counts-per-revolution calibration.</p>
 
-Orientation tracking implements a signal processing pipeline:
+<p align="justify">Orientation tracking implements a signal processing pipeline:</p>
 
-1. Raw IMU measurements undergo offset compensation and scaling.
-2. A *Kalman filter* processes each axis to reduce sensor noise.
-3. Gyroscope integration uses trapezoidal approximation for yaw calculation.
-4. Continuous angle normalization maintains orientation within 0-360 degrees.
+<ol align="justify">
+  <li>Raw IMU measurements undergo offset compensation and scaling.</li>
+  <li>A <i>Kalman filter</i> processes each axis to reduce sensor noise.</li>
+  <li>Gyroscope integration uses trapezoidal approximation for yaw calculation.</li>
+  <li>Continuous angle normalization maintains orientation within 0-360 degrees.</li>
+</ol>
 
-The system employs a *MATLAB-generated pure pursuit controller* operating at **LINEAR_VELOCITY** with a **LOOKAHEAD_DISTANCE** parameter. Real-time state estimation combines encoder distance and IMU yaw to maintain accurate position tracking in Cartesian coordinates, enabling smooth trajectory following in a snake-like pattern.
+<p align="justify">The system employs a <i>MATLAB-generated pure pursuit controller</i> operating at <b>LINEAR_VELOCITY</b> with a <b>LOOKAHEAD_DISTANCE</b> parameter. Real-time state estimation combines encoder distance and IMU yaw to maintain accurate position tracking in Cartesian coordinates, enabling smooth trajectory following in a snake-like pattern.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6027e72e-6981-4a71-afb9-62f8e4f565f3" alt = "Internal Navigation Mode Test"/>
@@ -41,11 +43,11 @@ The system employs a *MATLAB-generated pure pursuit controller* operating at **L
 
 ### External Navigation Mode
 
-Position data comes from the *John Deere Global Positioning System*, which tracks a vehicle-mounted *marker*. Coordinates are transmitted through an *nRF24L01* wireless link (using the *SPI5* peripheral) between a secondary board (*NUCLEO-F103RB*) and the vehicle. To accommodate the relatively slow GPS update rate, the system implements a time-based proportional control strategy:
+<p align="justify">Position data comes from the <i>John Deere Global Positioning System</i>, which tracks a vehicle-mounted <i>marker</i>. Coordinates are transmitted through an <i>nRF24L01</i> wireless link (using the <i>SPI5</i> peripheral) between a secondary board (<i>NUCLEO-F103RB</i>) and the vehicle. To accommodate the relatively slow GPS update rate, the system implements a time-based proportional control strategy:</p>
 
-The vehicle advances at a fixed **SPEED** while the controller calculates movement durations proportional to the distance from target. Between movements, the system pauses for **STOP_TIME** milliseconds to ensure stable position readings. Waypoint arrival triggers an audio alert through a PWM-driven buzzer using *TIM1*.
+<p align="justify">The vehicle advances at a fixed <b>SPEED</b> while the controller calculates movement durations proportional to the distance from target. Between movements, the system pauses for <b>STOP_TIME</b> milliseconds to ensure stable position readings. Waypoint arrival triggers an audio alert through a PWM-driven buzzer using <i>TIM1</i>.</p>
 
-Both modes utilize *USART3* for debugging and system monitoring, providing real-time state information at 115200 baud. 
+<p align="justify">Both modes utilize <i>USART3</i> for debugging and system monitoring, providing real-time state information at 115200 baud.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/52570b92-e074-4024-b223-eaa62c346fd2" alt = "External Navigation Mode Test"/>
@@ -53,7 +55,7 @@ Both modes utilize *USART3* for debugging and system monitoring, providing real-
 
 ## Vehicle Schematic Diagram & Component Overview
 
-For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics
+<p align="justify">For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/768281bf-2760-4cc2-8c32-98f283492d16" alt = "Schematic Diagram"/>
