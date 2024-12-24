@@ -49,6 +49,8 @@ Both modes utilize *USART3* for debugging and system monitoring, providing real-
 
 ## Vehicle Schematic Diagram & Component Overview
 
+For detailed information on the electronics design, including the PCB layout and KiCad schematic diagram, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/768281bf-2760-4cc2-8c32-98f283492d16" alt = "Schematic Diagram"/>
 </p>
