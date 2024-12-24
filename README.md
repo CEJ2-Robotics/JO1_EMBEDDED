@@ -66,3 +66,7 @@ Both modes utilize *USART3* for debugging and system monitoring, providing real-
 | Li-Po Battery 3.7V 2000mAh                   | 2             |
 | Li-Po 2S Battery 7.4V 1500mAh                | 1             |
 | LM2596 Step Down Regulator 25W 3A            | 2             |
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/768281bf-2760-4cc2-8c32-98f283492d16" alt = "Schematic Diagram"/>
+</p>
