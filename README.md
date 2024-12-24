@@ -8,7 +8,7 @@
 
 ## Prototype Description
 
-<p align="justify">Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for autonomous systems that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a tractor prototype that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations.</p>
+<p align="justify">Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for <i>autonomous systems</i>i> that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a <i>tractor prototype</i>i> that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1b476210-97d0-48a6-9460-5cdd5ff1afbb" alt = "Prototype"/>
