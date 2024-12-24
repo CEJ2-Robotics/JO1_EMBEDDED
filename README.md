@@ -1,6 +1,6 @@
 # John Deere Tractor Navigation System
 
-Main project in collaboration with *John Deere* for the undergrad course "**Design of Advanced Embedded Systems**", which delves mainly into *Design and Analysis of Algorithms*, *Digital Signal Processing*, *Shared-Memory Architecture*, and *Communication Interfaces*.
+<p align="justify">Main project in collaboration with *John Deere* for the undergrad course "**Design of Advanced Embedded Systems**", which delves mainly into *Design and Analysis of Algorithms*, *Digital Signal Processing*, *Shared-Memory Architecture*, and *Communication Interfaces*.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ba551d48-1bdb-434d-bece-047efd1e78cd" alt = "NUCLEO-H745ZI-Q" width="200" height="200"/>
@@ -8,7 +8,7 @@ Main project in collaboration with *John Deere* for the undergrad course "**Desi
 
 ## Prototype Description
 
-Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for autonomous systems that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a tractor prototype that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations. 
+Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for autonomous systems that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a tractor prototype that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1b476210-97d0-48a6-9460-5cdd5ff1afbb" alt = "Prototype"/>
@@ -53,7 +53,7 @@ Both modes utilize *USART3* for debugging and system monitoring, providing real-
 
 ## Vehicle Schematic Diagram & Component Overview
 
-For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics
+For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: https://github.com/CEJ2-Robotics/JO1_Electronics</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/768281bf-2760-4cc2-8c32-98f283492d16" alt = "Schematic Diagram"/>
