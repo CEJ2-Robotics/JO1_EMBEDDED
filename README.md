@@ -11,7 +11,7 @@ Main project in collaboration with *John Deere* for the undergrad course "**Desi
 Farmers face several challenges, including labor shortages, the need for precision in planting and harvesting, and time-consuming manual operations. Traditional tractors require constant monitoring and human input, increasing operational costs and the likelihood of errors in large-scale farming. There is a growing demand for autonomous systems that can handle repetitive tasks with accuracy and reliability. The proposed solution consists of a tractor prototype that features navigation via waypoints powered by technologies such as wireless communication, camera-based positioning and angle detection, inertial measurement generations and encoder distance calculations. 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1b476210-97d0-48a6-9460-5cdd5ff1afbb" alt = "Prototype" width="200" height="200"/>
+  <img src="https://github.com/user-attachments/assets/1b476210-97d0-48a6-9460-5cdd5ff1afbb" alt = "Prototype"/>
 </p>
 
 ## System Architecture
