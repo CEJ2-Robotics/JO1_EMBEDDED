@@ -61,7 +61,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/768281bf-2760-4cc2-8c32-98f283492d16" alt = "Schematic Diagram"/>
+  <img src="https://github.com/user-attachments/assets/57c4929a-49e3-491f-8dcb-4ec2ec678f7c" alt = "Schematic Diagram"/>
 </p>
 
 | Item                                         | Quantity      |
