@@ -1,4 +1,4 @@
-# John Deere Tractor Navigation System
+# JO1_Embedded - John Deere Tractor Navigation System
 
 <p align="justify">Main project in collaboration with <b>John Deere</b> for the undergrad course "<b>Design of Advanced Embedded Systems</b>", which delves mainly into <i>Design and Analysis of Algorithms</i>, <i>Digital Signal Processing</i>, <i>Shared-Memory Architecture</i>, and <i>Communication Interfaces</i>.</p>
 
