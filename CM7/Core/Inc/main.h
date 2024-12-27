@@ -61,6 +61,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define NRF_SPI4_SCK_Pin GPIO_PIN_2
 #define NRF_SPI4_SCK_GPIO_Port GPIOE
+#define NRF_CSN_Pin GPIO_PIN_3
+#define NRF_CSN_GPIO_Port GPIOE
 #define NRF_SPI4_MISO_Pin GPIO_PIN_5
 #define NRF_SPI4_MISO_GPIO_Port GPIOE
 #define NRF_SPI4_MOSI_Pin GPIO_PIN_6
@@ -71,8 +73,6 @@ void Error_Handler(void);
 #define STLINK_TX_GPIO_Port GPIOD
 #define NRF_CE_Pin GPIO_PIN_6
 #define NRF_CE_GPIO_Port GPIOC
-#define NRF_CSN_Pin GPIO_PIN_7
-#define NRF_CSN_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
