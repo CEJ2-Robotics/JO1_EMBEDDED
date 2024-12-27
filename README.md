@@ -57,7 +57,7 @@
 
 <p align="justify">
   For detailed information on the electronics design, including the KiCad PCB layout, please refer to the 
-  <a href="https://github.com/CEJ2-Robotics/JO1_Electronics" style="color: #3B8927;>dedicated electronics repository</a>.
+  <a href="https://github.com/CEJ2-Robotics/JO1_Electronics" style="color: #3B8927;>dedicated electronics repository</a>
 </p>
 
 <p align="center">
