@@ -56,10 +56,8 @@
 ## Vehicle Schematic Diagram & Component Overview
 
 <p align="justify">
-  For detailed information on the electronics design, including the KiCad PCB layout, please refer to the dedicated electronics repository: 
-  <a href="https://github.com/CEJ2-Robotics/JO1_Electronics" style="color: #007BFF; text-decoration: none; font-weight: bold;" onmouseover="this.style.color='#0056b3'" onmouseout="this.style.color='#007BFF'">
-    Visit the Electronics Repository
-  </a>
+  For detailed information on the electronics design, including the KiCad PCB layout, please refer to the 
+  <a href="https://github.com/CEJ2-Robotics/JO1_Electronics" style="color: #3B8927;>dedicated electronics repository</a>.
 </p>
 
 <p align="center">
