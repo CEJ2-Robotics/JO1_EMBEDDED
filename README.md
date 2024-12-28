@@ -61,10 +61,10 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/57c4929a-49e3-491f-8dcb-4ec2ec678f7c" alt = "Schematic Diagram"/>
+  <img src="https://github.com/user-attachments/assets/9b74195b-1172-42a1-ba46-7cc85f1335c5" alt = "Schematic Diagram"/>
 </p>
 
-| Componen                                     | Quantity      |
+| Component                                    | Quantity      |
 | ---------------------------------------------| ------------- |
 | Servo Steering Robot Kit                     | 1             |
 | NUCLEO-H745ZI-Q                              | 1             |
